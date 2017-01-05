@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+ <category>
+<pattern>Você consegui contar de <set>number</set> até <set>number</set></pattern>
+<template><think><set var="count">0</set></think>
+<condition var="count">
+<li><value><star/></value></li>
+<li><set var="count"><map><name>successor</name><get name="count"/></map></set>
+<loop/></li>
+</condition></template>
+</category>
+</aiml>
